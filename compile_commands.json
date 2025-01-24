@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based/include -I/storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based/src -Wall -std=c++17 -fallow-void-main -o CMakeFiles/Main.dir/src/Menu.cpp.o -c /storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based/src/Menu.cpp",
+  "file": "/storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based/src/Menu.cpp"
+},
+{
+  "directory": "/storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based/include -I/storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based/src -Wall -std=c++17 -fallow-void-main -o CMakeFiles/Main.dir/src/main.cpp.o -c /storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based/src/main.cpp",
+  "file": "/storage/emulated/0/Android/data/ru.iiec.cxxdroid/files/text-based/src/main.cpp"
+}
+]
