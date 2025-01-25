@@ -3,17 +3,21 @@
 #include <string>
 #include <vector>
 
-class Choice;
+struct Page;
+struct MenuLink;
 
 class Menu{
 private:
 	std::string title;
 	std::string msg;
 	int selectedIndex = 0;
-	Choice* selectedChoice;
 
-	std::vector<Choice*> choices;
-	
+	std::string selectedChoice;
+	Page* page;
+
+	std::vector<std::string> choices;
+	std::vector<MenuLink*> menuLinks;
+
 	int cols;
 	int rows;
 	int maxChoiceLen;
@@ -30,14 +34,15 @@ public:
 	void print();
 	
 	void addSelectedIndex(int index);
-	//void setParent(Menu* parent);
-	//void addChild(Menu* child);
-	
+	void addPageIndex(int index);
+	void addSubMenu(Menu* subMenu, int choiceIndex);
+	void addSubMenu(std::vector<Menu*> subMenus);
+	void turnPage(int pageIndex);
+
 	std::string getMsg(){return msg;}
 	int getSelectedIndex(){return selectedIndex;}
-	Choice* getSelectedChoice(){return selectedChoice;}
-
+	std::string getSelectedChoice(){return selectedChoice;}
 	Menu* getParent(){return parent;}
-	
-	void addSubMenu(Menu* subMenu, int choiceIndex);
+	Menu* getSubMenu();
+	Menu* getSubMenu(int choiceIndex);
 };
